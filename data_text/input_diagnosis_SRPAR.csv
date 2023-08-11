@@ -1,0 +1,16 @@
+field_name_generic;node_name;description;help_entry;class_1_name_in_network;class_1_name_to_show;class_2_name_in_network;class_2_name_to_show;class_3_name_in_network;class_3_name_to_show
+Symptom_1;SRPAR_FI;German Fauna Index [EQR];Selection of the standardized German Fauna Index as Ecological Quality Ratio (EQR).;Low;Low (<= 0,4);Medium;Medium (> 0,4 bis <= 0,6);High;High (> 0,6)
+Symptom_2;SRPAR_SI;German Saprobic Index (new);Selection of the German Saprobial Index (new).;Low;Low (<= 1,7);Medium;Medium (> 1,7 bis <= 2);High;High (> 2)
+Symptom_3;SRPAR_Epirhithral;Epirhithral preference [%];Selection of the relative abundance of species with epirhithral preference (scored taxa = 100%).;Low;Low (<= 10);Medium;Medium (> 10 bis <= 15);High;High (> 15)
+Symptom_4;SRPAR_Hyporhithral;Hyporhithral prefernce[%];Selection of the relative abundance of species with hyporhithral preference (scored taxa = 100%).;Low;Low (<= 20);Medium;Medium (> 20 bis <= 25);High;High (> 25)
+Symptom_5;SRPAR_Littoral;Litoral preference [%];Selection of the relative abundance of species with littoral preference (scored taxa = 100%).;Low;Low  (<= 5);Medium;Medium (> 5 bis <= 10);High;High (> 10)
+Symptom_6;SRPAR_Pelal;Pelal preference [%];Selection of relative abundance of species with pelal preference (scored taxa = 100%).;Low;Low  (<= 5);Medium;Medium (> 5 bis <= 10);High;High (> 10)
+Symptom_7;SRPAR_Rheoindex;Rheoindex;Selection of Rheoindex according to Banning (abundance classes).;Low;Low (<= 0,6);Medium;Medium (> 0,6 bis <= 0,75);High;High (> 0,75)
+Symptom_8;SRPAR_AFF;Active filter feeders [%];Selection of the relative abundance of active filter feeders (scored taxa = 100%).;Low;Low (<= 2,5);High;High (> 2,5);;
+Symptom_9;SRPAR_SPEAR;SPEAR (pesticides);Selection of the SPEAR index (pesticides).;Low;Low (<= 22);Medium;Medium (> 22 bis <= 33);High;High (> 33)
+Symptom_10;SRPAR_KLIWA;KLIWA Index MZB;Selection of the KLIWA Index MZB (corresponds to summer water temperature preference in °C).;Low;Low (<= 14);High;High (> 14);;
+Symptom_11;SRPAR_EPTCBO;EPTCBO taxa;Selection of the number of Ephemeroptera, Plecoptera, Trichoptera, Coleoptera, Bivalvia and Odonata taxa.;Low;Low (<= 20);Medium;Medium (> 20 bis <= 30);High;High (> 30)
+Symptom_12;SRPAR_Coleoptera;Coleoptera taxa [%];Selection of the relative abundance of coloptera taxa (scored taxa = 100%).;Low;Low (<= 10);High;High (> 10);;
+Symptom_13;SRPAR_Trichoptera;Trichoptera taxa [%];Selection of the relative abundance of trichoptera taxa (scored taxa = 100%).;Low;Low (<= 5);Medium;Medium (> 5 bis <= 10);High;High (> 10)
+Symptom_14;SRPAR_EPT;EPT taxa [%];Selection of the relative abundance of Ephemeroptera, Plecoptera and Trichoptera taxa based on abundance classes.;Low;Low (<= 35);Medium;Medium (> 35 bis <= 50);High;High (> 50)
+Symptom_15;SRPAR_TI;Selection of the Trophic Diatom Index.;Selection of the Trophic Diatom Index.;Low;Low (<= 2,7);Medium;Medium (> 2,7 bis <= 3,15);High;High (> 3,15)

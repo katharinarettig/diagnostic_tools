@@ -1,0 +1,20 @@
+field_name_generic;node_name;node_names_to_show;html_file_name;image_name;image_source;class_to_use_in_radar_chart;class_1_name_in_network;class_1_name_to_show;class_2_name_in_network;class_2_name_to_show;class_3_name_in_network;class_3_name_to_show
+Cause_1;RLMR_Flow;"Modified 
+flow diversity / 
+depth variance";Flow.html;Flow.jpg;Photo of a heavily straightened stream with low flow diversity. Copyright: Hackbarth.;2;Natural_to_significantly_modified;Natural to significantly modified(<= 4,5);Heavily_to_completely_modified;Heavily to completely modified(> 4,5);;
+Cause_2;RLMR_Nutrients;Nutrient pollution;Nutrients.html;Nutrients.jpg;Photo of a stream that is weedy due to an nutrient enrichment. Copyright: Schütz.;2;No;No;Yes;Yes;;
+Cause_3;RLMR_Temperature;Thermal pollution;Temperature.html;Temperature.jpg;Photo of a stream that is effected by thermal pollution due to discharge of the cooling water of a power plant. Copyright: LUBW.;2;No;No;Yes;Yes;;
+Cause_4;RLMR_Urban;Urban area;Urban.html;Urban.png;Photo of a stream in an urbanized area which is significantly structurally modified. Copyright: LUBW.;2;Low;Low (<= 7);High;High (> 7);;
+Cause_5;RLMR_Agriculture;Agriculture ;Agriculture.html;Agriculture.jpg;Photo of a stream surrounded by agricultural land. Copyright: Schütz.;3;Low;Low (<= 10);Medium;Medium (> 10 bis <= 30);High;High (> 30)
+Cause_6;RLMR_Fines;"Increased fine
+sediments";Fines.html;Fines.jpg;Photo of a stream that is dammed. Copyright: LUBW.;2;Low;Low (<= 10);High;High (> 10);;
+Cause_7;RLMR_Backwater;Modified backwater;Backwater.html;Backwater.jpg;Foto eines Fließgewässers, das durch ein Querbauwerk stark rückge- staut ist. Quelle: LUBW.;2;Natural_to_significantly_modified;Natural to significantly modified (<= 5);Heavily_to_completely_modified;Heavily to completely modified (> 5);;
+Cause_8;RLMR_Bank;"Modified bank
+condition";Bank.html;Bank.jpg;Photo of a stream with bank revetment and missing bank structures. Copyright: Gorka.;2;Natural_to_moderately_modified;"Natural to moderately modified
+(<= 3)";Significantly_to_completely_modified;"Significantly to completely modified 
+(> 3)";;
+Cause_9;RLMR_Substrate;"Modified substrate 
+diversity";Substrate.html;Substrate.png;Photo of a stream with a artifical riverbed and thus lower substrate diversity. Copyright: Schütz.;-1;Natural_to_significantly_modified;"Natural to significantly modified
+(<= 4)";Heavily_modified;"Heavily modified
+(> 4 bis <= 5)";Very_heavily_to_completely_modified;"Very heavily to completely modified 
+(> 5)"

@@ -1,0 +1,374 @@
+net 
+{
+    node_size = (76 36);
+}
+
+node RLMR_Urban
+{
+    label = "Urbanized area";
+    position = (1644 408);
+    states = ("Low"  "High");
+}
+
+node RLMR_Bank
+{
+    label = "Bank condition";
+    position = (396 573);
+    states = ("Natural_to_moderately_modified" 
+     "Significantly_to_completely_modified");
+}
+
+node RLMR_Backwater
+{
+    label = "Backwater";
+    position = (1501 839);
+    states = ("Natural_to_significantly_modified" 
+     "Heavily_to_completely_modified");
+}
+
+node RLMR_Flow
+{
+    label = "Flow diversity & depth variance";
+    position = (1083 560);
+    states = ("Natural_to_significantly_modified" 
+     "Heavily_to_completely_modified");
+}
+
+node RLMR_Agriculture
+{
+    label = "Agriculture";
+    position = (361 238);
+    states = ("Low"  "Medium"  "High");
+}
+
+node RLMR_Fines
+{
+    label = "Fine sediments";
+    position = (716 405);
+    states = ("Low"  "High");
+}
+
+node RLMR_Substrate
+{
+    label = "Substrate diversity";
+    position = (1897 552);
+    states = ("Natural_to_significantly_modified"  "Heavily_modified" 
+     "Very_heavily_to_completely_modified");
+}
+
+node RLMR_Rheoindex
+{
+    label = "Rheoindex ";
+    position = (758 156);
+    states = ("Low"  "Medium"  "High");
+}
+
+node RLMR_FI
+{
+    label = "German Fauna Index";
+    position = (1646 716);
+    states = ("Low"  "Medium"  "High");
+}
+
+node RLMR_Nutrients
+{
+    label = "Nutrients";
+    position = (1253 -25);
+    states = ("No"  "Yes");
+}
+
+node RLMR_TI
+{
+    label = "Trophic Diatom Index";
+    position = (1494 -1);
+    states = ("Low"  "Medium"  "High");
+}
+
+node RLMR_Temperature
+{
+    label = "Water temperature";
+    position = (998 -21);
+    states = ("No"  "Yes");
+}
+
+node RLMR_KLIWA
+{
+    label = "KLIWA Index MZB";
+    position = (735 40);
+    states = ("Low"  "High");
+}
+
+node RLMR_SI
+{
+    label = "German Saprobic Index";
+    position = (999 168);
+    states = ("Low"  "Medium"  "High");
+}
+
+node RLMR_EPT
+{
+    label = "EPT taxa";
+    position = (1279 228);
+    states = ("Low"  "Medium"  "High");
+}
+
+node RLMR_EPTCBO
+{
+    label = "EPTCBO taxa";
+    position = (843 781);
+    states = ("Low"  "Medium"  "High");
+}
+
+node RLMR_Littoral
+{
+    label = "Littoral preference";
+    position = (548 779);
+    states = ("Low"  "Medium"  "High");
+}
+
+node RLMR_Metarhithral
+{
+    label = "Metarhithral preference";
+    position = (361 -23);
+    states = ("Low"  "Medium"  "High");
+}
+
+node RLMR_Epirhithral
+{
+    label = "Epirhithral preference";
+    position = (1501 138);
+    states = ("Low"  "Medium"  "High");
+}
+
+node RLMR_Trichoptera
+{
+    label = "Trichoptera taxa";
+    position = (1642 269);
+    states = ("Low"  "Medium"  "High");
+}
+
+node RLMR_Psammal
+{
+    label = "Psammal preference";
+    position = (351 405);
+    states = ("Low"  "High");
+}
+
+node RLMR_Coleoptera
+{
+    label = "Coleoptera taxa";
+    position = (1088 847);
+    states = ("Low"  "Medium"  "High");
+}
+
+potential (RLMR_Urban |)
+{
+    data = (0.30000000 0.70000000);
+}
+
+potential (RLMR_Bank |)
+{
+    data = (0.25000000 0.75000000);
+}
+
+potential (RLMR_Backwater |)
+{
+    data = (0.40000000 0.60000000);
+}
+
+potential (RLMR_Flow | RLMR_Backwater)
+{
+    data = ((0.75000000 0.25000000)
+        (0.40000000 0.60000000));
+}
+
+potential (RLMR_Agriculture |)
+{
+    data = (0.25000000 0.50000000 0.25000000);
+}
+
+potential (RLMR_Fines | RLMR_Flow RLMR_Agriculture RLMR_Urban)
+{
+    data = ((((0.99000000 0.01000000)
+        (0.75000000 0.25000000))
+        ((0.90000000 0.10000000)
+        (0.60000000 0.40000000))
+        ((0.85000000 0.15000000)
+        (0.55000000 0.45000000)))
+        (((0.90000000 0.10000000)
+        (0.60000000 0.40000000))
+        ((0.80000000 0.20000000)
+        (0.55000000 0.45000000))
+        ((0.70000000 0.30000000)
+        (0.50000000 0.50000000))));
+}
+
+potential (RLMR_Substrate | RLMR_Flow RLMR_Fines)
+{
+    data = (((0.30000000 0.60000000 0.10000000)
+        (0.01000000 0.84000000 0.15000000))
+        ((0.10000000 0.35000000 0.55000000)
+        (0.10000000 0.30000000 0.60000000)));
+}
+
+potential (RLMR_Rheoindex | RLMR_Fines RLMR_Flow RLMR_Bank)
+{
+    data = ((((0.15000000 0.40000000 0.45000000)
+        (0.01000000 0.24000000 0.75000000))
+        ((0.25000000 0.65000000 0.10000000)
+        (0.25000000 0.40000000 0.35000000)))
+        (((0.10000000 0.40000000 0.50000000)
+        (0.10000000 0.65000000 0.25000000))
+        ((0.89000000 0.10000000 0.01000000)
+        (0.75000000 0.15000000 0.10000000))));
+}
+
+potential (RLMR_FI | RLMR_Flow RLMR_Substrate RLMR_Urban)
+{
+    data = ((((0.01000000 0.19000000 0.80000000)
+        (0.20000000 0.10000000 0.70000000))
+        ((0.05000000 0.15000000 0.80000000)
+        (0.20000000 0.10000000 0.70000000))
+        ((0.05000000 0.25000000 0.70000000)
+        (0.25000000 0.15000000 0.60000000)))
+        (((0.01000000 0.39000000 0.60000000)
+        (0.20000000 0.30000000 0.50000000))
+        ((0.30000000 0.20000000 0.50000000)
+        (0.45000000 0.25000000 0.30000000))
+        ((0.30000000 0.15000000 0.55000000)
+        (0.60000000 0.20000000 0.20000000))));
+}
+
+potential (RLMR_Nutrients |)
+{
+    data = (0.60000000 0.40000000);
+}
+
+potential (RLMR_TI | RLMR_Nutrients)
+{
+    data = ((0.85000000 0.14000000 0.01000000)
+        (0.05000000 0.45000000 0.50000000));
+}
+
+potential (RLMR_Temperature |)
+{
+    data = (0.75000000 0.25000000);
+}
+
+potential (RLMR_KLIWA | RLMR_Temperature)
+{
+    data = ((0.80000000 0.20000000)
+        (0.20000000 0.80000000));
+}
+
+potential (RLMR_SI | RLMR_Flow RLMR_Fines RLMR_Nutrients RLMR_Temperature)
+{
+    data = (((((0.50000000 0.49000000 0.01000000)
+        (0.15000000 0.55000000 0.30000000))
+        ((0.20000000 0.79000000 0.01000000)
+        (0.10000000 0.50000000 0.40000000)))
+        (((0.40000000 0.59000000 0.01000000)
+        (0.10000000 0.55000000 0.35000000))
+        ((0.25000000 0.70000000 0.05000000)
+        (0.05000000 0.45000000 0.50000000))))
+        ((((0.25000000 0.65000000 0.10000000)
+        (0.01000000 0.29000000 0.70000000))
+        ((0.01000000 0.74000000 0.25000000)
+        (0.01000000 0.24000000 0.75000000)))
+        (((0.01000000 0.79000000 0.20000000)
+        (0.01000000 0.19000000 0.80000000))
+        ((0.01000000 0.59000000 0.40000000)
+        (0.01000000 0.01000000 0.98000000)))));
+}
+
+potential (RLMR_EPT | RLMR_Flow RLMR_Fines RLMR_Temperature)
+{
+    data = ((((0.15000000 0.30000000 0.55000000)
+        (0.30000000 0.50000000 0.20000000))
+        ((0.20000000 0.30000000 0.50000000)
+        (0.60000000 0.20000000 0.20000000)))
+        (((0.35000000 0.35000000 0.30000000)
+        (0.40000000 0.35000000 0.25000000))
+        ((0.40000000 0.35000000 0.25000000)
+        (0.70000000 0.20000000 0.10000000))));
+}
+
+potential (RLMR_EPTCBO | RLMR_Flow RLMR_Fines RLMR_Substrate)
+{
+    data = ((((0.01000000 0.29000000 0.70000000)
+        (0.05000000 0.30000000 0.65000000)
+        (0.10000000 0.30000000 0.60000000))
+        ((0.15000000 0.30000000 0.55000000)
+        (0.20000000 0.30000000 0.50000000)
+        (0.25000000 0.35000000 0.40000000)))
+        (((0.10000000 0.25000000 0.65000000)
+        (0.15000000 0.25000000 0.60000000)
+        (0.20000000 0.30000000 0.50000000))
+        ((0.20000000 0.30000000 0.50000000)
+        (0.25000000 0.35000000 0.40000000)
+        (0.30000000 0.30000000 0.40000000))));
+}
+
+potential (RLMR_Littoral | RLMR_Fines RLMR_Flow RLMR_Bank)
+{
+    data = ((((0.40000000 0.50000000 0.10000000)
+        (0.30000000 0.50000000 0.20000000))
+        ((0.20000000 0.50000000 0.30000000)
+        (0.10000000 0.40000000 0.50000000)))
+        (((0.40000000 0.40000000 0.20000000)
+        (0.40000000 0.30000000 0.30000000))
+        ((0.10000000 0.30000000 0.60000000)
+        (0.01000000 0.24000000 0.75000000))));
+}
+
+potential (RLMR_Metarhithral | RLMR_Agriculture RLMR_Flow RLMR_Temperature)
+{
+    data = ((((0.01000000 0.44000000 0.55000000)
+        (0.40000000 0.40000000 0.20000000))
+        ((0.25000000 0.74000000 0.01000000)
+        (0.60000000 0.25000000 0.15000000)))
+        (((0.01000000 0.69000000 0.30000000)
+        (0.50000000 0.40000000 0.10000000))
+        ((0.40000000 0.45000000 0.15000000)
+        (0.75000000 0.24000000 0.01000000)))
+        (((0.45000000 0.54000000 0.01000000)
+        (0.80000000 0.19000000 0.01000000))
+        ((0.70000000 0.29000000 0.01000000)
+        (0.90000000 0.09000000 0.01000000))));
+}
+
+potential (RLMR_Epirhithral | RLMR_Flow RLMR_Temperature RLMR_Backwater)
+{
+    data = ((((0.25000000 0.35000000 0.40000000)
+        (0.75000000 0.24000000 0.01000000))
+        ((0.60000000 0.25000000 0.15000000)
+        (0.80000000 0.19000000 0.01000000)))
+        (((0.55000000 0.25000000 0.20000000)
+        (0.80000000 0.19000000 0.01000000))
+        ((0.70000000 0.20000000 0.10000000)
+        (0.85000000 0.14000000 0.01000000))));
+}
+
+potential (RLMR_Trichoptera | RLMR_Bank RLMR_Urban)
+{
+    data = (((0.20000000 0.35000000 0.45000000)
+        (0.65000000 0.15000000 0.20000000))
+        ((0.10000000 0.20000000 0.70000000)
+        (0.45000000 0.35000000 0.20000000)));
+}
+
+potential (RLMR_Psammal | RLMR_Fines RLMR_Bank)
+{
+    data = (((0.55000000 0.45000000)
+        (0.90000000 0.10000000))
+        ((0.15000000 0.85000000)
+        (0.35000000 0.65000000)));
+}
+
+potential (RLMR_Coleoptera | RLMR_Flow RLMR_Backwater)
+{
+    data = (((0.15000000 0.30000000 0.55000000)
+        (0.20000000 0.50000000 0.30000000))
+        ((0.50000000 0.30000000 0.20000000)
+        (0.70000000 0.20000000 0.10000000)));
+}

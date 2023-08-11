@@ -1,0 +1,28 @@
+field_name_generic;node_name;node_names_to_show;html_file_name;image_name;image_source;class_to_use_in_radar_chart;class_1_name_in_network;class_1_name_to_show;class_2_name_in_network;class_2_name_to_show;class_3_name_in_network;class_3_name_to_show
+Cause_1;SLMR_Flow;"Modified 
+flow diversity / 
+depth variance";Flow.html;Flow.jpg;Photo of a heavily straightened stream with low flow diversity. Copyright: Hackbarth.;-1;Natural_to_moderately_modified;"Natural to moderately modified
+(<= 3)";Significantly_to_heavily_modified;"Significantly to heavily modified 
+(> 3 bis <= 5)";Very_heavily_to_completely_modified;"Very heavily to completely modified
+(> 5)"
+Cause_2;SLMR_Nutrients;Nutrient pollution;Nutrients.html;Nutrients.jpg;Photo of a stream that is weedy due to an nutrient enrichment. Copyright: Schütz.;-1;No;No;Yes;Yes;;
+Cause_3;SLMR_Temperature;Thermal pollution;Temperature.html;Temperature.jpg;Photo of a stream that is effected by thermal pollution due to discharge of the cooling water of a power plant. Copyright: LUBW.;-1;No;No;Yes;Yes;;
+Cause_4;SLMR_SpecialCrops;Special crops;SpecialCrops.html;SpecialCrops.jpg;Photo of a stream surrounded by special crops, e.g. vineyards. Copyright: LUBW.;-1;Low ;Low (<= 5);High;High (> 5);;
+Cause_5;SLMR_Urban;Urban area;Urban.html;Urban.png;Photo of a stream in an urbanized area which is significantly structurally modified. Copyright: LUBW.;3;Low;Low (<= 5);Medium;Medium (> 5 bis <= 10);High;High (>10)
+Cause_6;SLMR_Agriculture;Agriculture ;Agriculture.html;Agriculture.jpg;Photo of a stream surrounded by agricultural land. Copyright: Schütz.;3;Low;Low (<= 10);Medium;Medium (> 10 bis <= 20);High;High (>20)
+Cause_7;SLMR_Fines;"Increased fine
+sediments";Fines.html;Fines.jpg;Photo of a stream whose sole substrates are covered by fine sediments (silting, siltation). Copyright: Humberg.;-1;Low;Low (<= 10);Medium;Medium (> 10 bis <= 20);High;High (> 20)
+Cause_8;SLMR_Substrate;"Modified bank
+condition";Substrate.html;Substrate.png;Photo of a stream with bank revetment and missing bank structures. Copyright: Gorka.;-1;Natural_to_moderately_modified;"Natural to moderately modified
+(<= 3)";Significantly_to_heavily_modified;"Significantly to heavily modified
+(> 3 bis <= 4,5)";Very_heavily_to_completely_modified;"Very heavily to completely modified 
+(> 4,5)"
+Cause_9;SLMR_Bank;"Modified substrate 
+diversity";Bank.html;Bank.jpg;Photo of a stream with a artifical riverbed and thus lower substrate diversity. Copyright: Schütz.;-1;Natural_to_significantly_modified;"Natural to significantly modified
+(<= 4)";Heavily_to_completely_modified;"Heavily to completely modified
+(<= 4)";;
+Cause_10;SLMR_Width;"Modified width 
+variance";Width.html;Width.jpg;Photo of a stream with monotonous stream width or low width variance. Copyrigth: Hackbarth.;-1;Natural_to_significantly_modified;"Natural to significantly modified
+(<= 4)";Heavily_very_heavily_modified;"Heavily very heavily modified 
+(> 4 bis <= 6)";Completely_modified;"Completely modified
+(> 6)"

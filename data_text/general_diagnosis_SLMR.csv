@@ -1,0 +1,6 @@
+parameter,value,explanation
+network_file_name,BBN_SLMR.net,erstellt in GeNie
+main_tab_title, Streams of the low mountain ranges,
+threshold_slider_min,0,in percent
+threshold_slider_default,50,in percent
+threshold_slider_max,100,in percent
