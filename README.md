@@ -10,7 +10,7 @@ These tools are the result of the project “Development of diagnostic tools for
 Shiny (Chang et al., 2019) allows you to create interactive web apps directly from R. This code defines the server and user interface of the diagnostic tools.
 
 ## data_text
-The folder [<b>network_files</b>]() contains the Bayesian belief networks (BBN) (.net format), on which the diagnostic tools are based on.
+The folder [network_files](https://github.com/katharinarettig/diagnostic_tools/tree/main/data_text/network_files) contains the Bayesian belief networks (BBN) (.net format), on which the diagnostic tools are based on.
 
 To keep the R scripts handy and universal, tool-specific variable names, codings, display values and class boundaries are kept separate from the R codes and stored in tables (.csv format).
 
@@ -19,3 +19,9 @@ The general_diagnosis.csv tables contain, for example, assignments of headings a
 The input_diagnosis.csv tables define the variable names and state classes and the help entries as displayed in the selection bar (input) of the diagnostic tools. They also assign these variables and their states to their equivalents in the underlying BBN. 
 
 The output_diagnosis.csv tables contain similar information about variable names and state classes for the reactive radar plot and hierarchy (output). They also contain the definition of the state class(es) used on the changed probability values of which the output is generated.
+
+## html_files
+This file contains information that is displayed within the diagnostic tools. These include, explanation of the tool and its application, interpretation of results, recommended further reading and background information on stressors and linked explanations, such as possible management options. The information on the stressors is not provided in English but can be easily translated by copy and paste into a common translation program.
+
+## www
+This folder contains photos and graphics embedded in the diagnsotic tools.
