@@ -26,9 +26,9 @@ The interface between the BBNs and the web-based diagnostic tools is implemented
 
 ## app
 Shiny (Chang et al., 2019) allows you to create interactive web apps directly from R. This code defines the server and user interface of the diagnostic tools.
+<br>
+<br>
 
-<br>
-<br>
 #### References
 Chang, W., Cheng, J., Allaire, J. J., Sievert, C., Schloerke, B., Xie, Y., Allen, J., McPherson, J., Dipert, A., & Borges, B. (2021). Shiny: web application framework for R. https://cran.r-project.org/web/packages/shiny/index.html <br>
 R Core Team. (2021). R: A Language and Environment for Statistical Computing [Computer software]. R Foundation for Statistical Computing. Vienna. https://www.R-project.org <br>
