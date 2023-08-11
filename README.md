@@ -22,7 +22,7 @@ This file contains information that is displayed within the diagnostic tools. Th
 This folder contains photos and graphics embedded in the diagnsotic tools.
 
 ## Code
-The interface between the BBNs and the web-based diagnostic tools is implemented in R (R Core Team, 2021) and RStudio (https://rstudio.com/products/rstudio/). The script enables the import or storage of files as well as the definition of functions to perform model calculations with web-based diagnostic tools.
+The interface between the BBNs and the web-based diagnostic tools is implemented in R (R Core Team, 2021) and RStudio (https://rstudio.com/products/rstudio/). The script enables the import and storage of files as well as the definition of functions to perform calculations with the web-based diagnostic tools.
 
 ## app
 Shiny (Chang et al., 2019) allows you to create interactive web apps directly from R. This code defines the server and user interface of the diagnostic tools.
