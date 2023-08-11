@@ -1,1 +1,21 @@
-# diagnostic_tools
+# Web-based diagnostic tools
+
+This repository contains R codes and files to reproduce a reduced English version of the web-based diagnostic tools available on https://www.lubw.baden-wuerttemberg.de/wasser/diagnosetool-makrozoobenthos and described in Rettig, K., Semmler-Elpers, R., Brettschneider, D. & Feld, C. K. (in review): Of causes and symptoms - using monitoring data and expert knowledge to daignose causes of stream degradatation.
+
+These tools are the result of the project “Development of diagnostic tools for the identification of causal stressors on basis of macroinvertebrates in the context of stream assessment under the Water Framework Directive’ funded by the State Agency for the Environment of Baden-Württemberg (LUBW), Germany. 
+
+## Code
+
+## app
+Shiny (Chang et al., 2019) allows you to create interactive web apps directly from R. This code defines the server and user interface of the diagnostic tools.
+
+## data_text
+The folder [<b>network_files</b>]() contains the Bayesian belief networks (BBN) (.net format), on which the diagnostic tools are based on.
+
+To keep the R scripts handy and universal, tool-specific variable names, codings, display values and class boundaries are kept separate from the R codes and stored in tables (.csv format).
+
+The general_diagnosis.csv tables contain, for example, assignments of headings and default values to display the range of probabilities in the diagnostic tools. 
+
+The input_diagnosis.csv tables define the variable names and state classes and the help entries as displayed in the selection bar (input) of the diagnostic tools. They also assign these variables and their states to their equivalents in the underlying BBN. 
+
+The output_diagnosis.csv tables contain similar information about variable names and state classes for the reactive radar plot and hierarchy (output). They also contain the definition of the state class(es) used on the changed probability values of which the output is generated.
