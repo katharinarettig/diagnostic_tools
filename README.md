@@ -2,13 +2,7 @@
 
 This repository contains R codes and files to reproduce a reduced English version of the web-based diagnostic tools available on https://www.lubw.baden-wuerttemberg.de/wasser/diagnosetool-makrozoobenthos and described in Rettig et al. (in review).
 
-These tools are the result of the project “Development of diagnostic tools for the identification of causal stressors on basis of macroinvertebrates in the context of stream assessment under the Water Framework Directive’ funded by the State Agency for the Environment of Baden-Württemberg (LUBW), Germany. 
-
-## Code
-
-
-## app
-Shiny (Chang et al., 2019) allows you to create interactive web apps directly from R. This code defines the server and user interface of the diagnostic tools.
+These tools are the result of the project 'Development of diagnostic tools for the identification of causal stressors on basis of macroinvertebrates in the context of stream assessment under the Water Framework Directive' funded by the State Agency for the Environment of Baden-Württemberg (LUBW), Germany. 
 
 ## data_text
 The folder [network_files](https://github.com/katharinarettig/diagnostic_tools/tree/main/data_text/network_files) contains the Bayesian belief networks (BBN) (.net format), on which the diagnostic tools are based on.
@@ -26,8 +20,16 @@ This file contains information that is displayed within the diagnostic tools. Th
 
 ## www
 This folder contains photos and graphics embedded in the diagnsotic tools.
+
+## Code
+The interface between the BBNs and the web-based diagnostic tools is implemented in R (R Core Team, 2021) and RStudio (https://rstudio.com/products/rstudio/). The script enables the import or storage of files as well as the definition of functions to perform model calculations with web-based diagnostic tools.
+
+## app
+Shiny (Chang et al., 2019) allows you to create interactive web apps directly from R. This code defines the server and user interface of the diagnostic tools.
+
 <br>
 <br>
 #### References
 Chang, W., Cheng, J., Allaire, J. J., Sievert, C., Schloerke, B., Xie, Y., Allen, J., McPherson, J., Dipert, A., & Borges, B. (2021). Shiny: web application framework for R. https://cran.r-project.org/web/packages/shiny/index.html <br>
+R Core Team. (2021). R: A Language and Environment for Statistical Computing [Computer software]. R Foundation for Statistical Computing. Vienna. https://www.R-project.org <br>
 Rettig, K., Semmler-Elpers, R., Brettschneider, D. & Feld, C. K. (in review): Of causes and symptoms - using monitoring data and expert knowledge to diagnose causes of stream degradation.
